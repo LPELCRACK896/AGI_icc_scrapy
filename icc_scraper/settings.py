@@ -96,17 +96,17 @@ FEED_EXPORT_ENCODING = "utf-8"
 # settings.py
 
 FEEDS = {
-    'stations.json': {
+    './data/stations.json': {
         'format': 'json',
         'fields': ['label', 'value'],
         'item_classes': ['icc_scraper.items.StationItem'],
     },
-    'variables.json': {
+    './data/variables.json': {
         'format': 'json',
         'fields': ['label', 'value'],
         'item_classes': ['icc_scraper.items.VariableItem'],
     },
-    'groups.json': {
+    './data/groups.json': {
         'format': 'json',
         'fields': ['label', 'value'],
         'item_classes': ['icc_scraper.items.GroupItem'],
